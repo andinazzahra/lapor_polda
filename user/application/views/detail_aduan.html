@@ -1,0 +1,351 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Lapor Polda DIY
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-white text-black">
+  <!-- Header -->
+  <header class="bg-gray-100 border-b border-gray-300">
+   <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+    <div class="flex items-center space-x-2">
+     <img src="<?php echo base_url('../assets/logo.png') ?>" alt="Logo Kepolisian" class="w-10 h-12" height="32"/>
+     <div class="text-sm leading-tight">
+      <p class="text-1xl font-semibold text-black">
+       Kepolisian
+      </p>
+      <p class="text-1xl text-gray-700">
+       Daerah Istimewa Yogyakarta
+      </p>
+     </div>
+    </div>
+    <nav class="text-sm font-normal text-black space-x-6">
+     <a class="hover:underline" href="#">
+      Home
+     </a>
+     <a class="hover:underline" href="#">
+      Daftar Aduan
+     </a>
+    </nav>
+   </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="relative w-full">
+  <img class="w-full object-cover brightness-75" src="<?php echo base_url('../assets/polda.png') ?>" alt="POLDA DIY" />
+  <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4" style="text-shadow: 0 0 5px rgba(0,0,0,0.7)">
+    <h1 class="text-6xl font-bold text-white">
+      LAPOR POLDA DIY
+    </h1>
+    <p class="mt-2 text-base sm:text-lg md:text-xl font-normal max-w-3xl">
+      E-lapor Kepolisian Daerah Istimewa Yogyakarta
+    </p>
+  </div>
+</section>
+  </section>
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+   <!-- Left Column: Riwayat Aduan -->
+   <section class="md:col-span-1 border border-black rounded-sm p-4">
+    <h2 class="font-semibold border-b border-black pb-1 mb-4 text-center">
+     Riwayat Aduan
+    </h2>
+    <!-- Timeline -->
+    <div class="space-y-6">
+     <!-- Item 1 -->
+     <div class="flex items-center space-x-4">
+      <div class="flex flex-col items-center">
+       <div class="w-5 h-5 rounded-full bg-red-800 border-2 border-black">
+       </div>
+       <div class="w-[2px] h-16 bg-black">
+       </div>
+      </div>
+      <div class="flex-1">
+       <div class="bg-red-800 text-white px-4 py-3 rounded-sm font-semibold text-sm">
+        DIBUAT
+       </div>
+       <p class="text-xs text-red-200 mt-1">
+        16 April 2025 pukul 22:00 WIB
+       </p>
+      </div>
+     </div>
+     <!-- Item 2 -->
+     <div class="flex items-center space-x-4">
+      <div class="flex flex-col items-center">
+       <div class="w-5 h-5 rounded-full bg-gray-700 border-2 border-black">
+       </div>
+       <div class="w-[2px] h-16 bg-black">
+       </div>
+      </div>
+      <div class="flex-1">
+       <div class="bg-gray-700 text-white px-4 py-3 rounded-sm font-semibold text-sm">
+        DIBACA
+       </div>
+       <p class="text-xs text-gray-300 mt-1">
+        17 April 2025 pukul 10:00 WIB
+       </p>
+      </div>
+     </div>
+     <!-- Item 3 -->
+     <div class="flex items-center space-x-4">
+      <div class="flex flex-col items-center">
+       <div class="w-5 h-5 rounded-full bg-red-800 border-2 border-black">
+       </div>
+      </div>
+      <div class="flex-1">
+       <div class="bg-red-800 text-white px-4 py-3 rounded-sm font-semibold text-sm">
+        DITANGGAPI
+       </div>
+       <p class="text-xs text-red-200 mt-1">
+        17 April 2025 pukul 11:00 WIB
+       </p>
+      </div>
+     </div>
+    </div>
+    <!-- Komentar Section -->
+    <div class="mt-6 bg-red-800 p-4 rounded-sm text-white">
+     <div class="flex space-x-3 mb-3 text-xs font-normal">
+      <button class="flex items-center space-x-1 border border-white rounded px-2 py-1" type="button">
+       <i class="far fa-comment-alt">
+       </i>
+       <span>
+        Komentar
+       </span>
+      </button>
+      <button class="flex items-center space-x-1 border border-white rounded px-2 py-1" type="button">
+       <i class="far fa-file">
+       </i>
+       <span>
+        Lampiran
+       </span>
+      </button>
+      <button class="flex items-center space-x-1 border border-white rounded px-2 py-1" type="button">
+       <i class="fas fa-map-marker-alt">
+       </i>
+       <span>
+        Lokasi
+       </span>
+      </button>
+     </div>
+     <p class="mb-2 font-semibold text-lg">
+      Komentar
+     </p>
+     <p class="mb-3 text-sm italic">
+      --- Belum ada komentar ---
+     </p>
+     <textarea class="w-full bg-red-900 border border-red-700 rounded-sm px-3 py-2 text-white text-sm resize-none" placeholder="Tulis Komentar" rows="5"></textarea>
+     <button class="mt-3 bg-red-700 text-white text-xs font-semibold px-4 py-1 rounded-sm hover:bg-red-600" type="button">
+      Kirim
+     </button>
+    </div>
+   </section>
+   <!-- Right Column: Detail & Tanggapan -->
+   <section class="md:col-span-2 space-y-6">
+    <!-- Detail Aduan -->
+    <article class="border border-black rounded-sm p-4">
+     <div class="flex items-center space-x-3 mb-3">
+      <div class="w-10 h-10 rounded-full bg-gray-900 flex justify-center items-center text-white text-lg">
+       <i class="fas fa-user">
+       </i>
+      </div>
+      <div>
+       <p class="font-semibold text-sm">
+        Bapak Supri
+       </p>
+       <p class="text-xs text-gray-600">
+        16-04-2025, 22:00 WIB
+       </p>
+      </div>
+     </div>
+     <h3 class="font-semibold text-base mb-1">
+      Balap Liar di Jalan Parangtritis
+     </h3>
+     <p class="text-xs leading-relaxed">
+      Setiap malam minggu, sering terjadi balap liar yang sangat mengganggu dan
+          berbahaya di sekitar jalan Parangtritis KM 7.
+     </p>
+     <button class="mt-4 bg-red-700 text-white text-xs font-semibold px-4 py-1 rounded-sm hover:bg-red-600" type="button">
+      Gangguan
+     </button>
+     <button class="ml-3 bg-green-500 text-white text-xs font-semibold px-4 py-1 rounded-sm hover:bg-green-400" type="button">
+      Selesai
+     </button>
+    </article>
+    <!-- Tanggapan Polda DIY -->
+    <article class="bg-gray-300 p-6 rounded-sm">
+     <div class="mb-3">
+      <span class="inline-block bg-red-700 text-white text-xs font-semibold px-3 py-1 rounded-sm">
+       Gangguan Ketertiban Umum
+      </span>
+     </div>
+     <h3 class="font-semibold text-lg mb-3">
+      Tanggapan Polda DIY
+     </h3>
+     <p class="text-xs leading-relaxed">
+      Terima kasih atas informasi yang Saudara sampaikan. Menindaklanjuti laporan
+          mengenai aktivitas balap liar di wilayah tersebut, kami telah menginstruksikan
+          jajaran patroli lalu lintas dan unit Sabhara untuk meningkatkan pengawasan
+          serta penindakan di lokasi yang dimaksud, khususnya pada jam-jam rawan malam
+          hari. Apabila Saudara memiliki bukti tambahan seperti foto, video, atau
+          waktu kejadian yang lebih detail, mohon dapat dilampirkan untuk membantu
+          proses penindakan lebih lanjut. Terima kasih atas partisipasi Anda dalam
+          menjaga keamanan dan ketertiban masyarakat.
+     </p>
+     <p class="text-xs leading-relaxed mt-3">
+      Yth. Saudara Pelapor, terima kasih atas tambahan informasi yang telah
+          disampaikan. Berdasarkan laporan Saudara, petugas telah melakukan patroli
+          intensif di lokasi dan berhasil membubarkan serta memberikan sanksi kepada
+          sejumlah pelaku yang terlibat dalam aksi balap liar. Kami akan terus
+          melakukan pemantauan berkala demi menjaga situasi tetap kondusif. Demikian
+          ini laporan dinyatakan SELESAI. Atas perhatian dan kerjasama Saudara kami
+          ucapkan terima kasih.
+     </p>
+    </article>
+   </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 text-xs">
+   <div class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
+    <!-- Kewilayahan -->
+    <div>
+     <h4 class="font-bold mb-3 text-white">
+      KEWILAYAHAN
+     </h4>
+     <ul class="space-y-1">
+      <li>
+       <a class="hover:underline" href="#">
+        POLRESTA Yogyakarta
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        POLRESTA Sleman
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        POLRES Bantul
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        POLRES Kulonprogo
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        POLRES Gunungkidul
+       </a>
+      </li>
+     </ul>
+    </div>
+    <!-- Menu -->
+    <div>
+     <h4 class="font-bold mb-3 text-white">
+      MENU
+     </h4>
+     <ul class="space-y-1">
+      <li>
+       <a class="hover:underline" href="#">
+        Menu Beranda
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Menu Tribata News
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Menu Galeri
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Menu Agenda
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Menu IKM
+       </a>
+      </li>
+     </ul>
+    </div>
+    <!-- Kontak Kami -->
+    <div class="col-span-2 md:col-span-1">
+     <h4 class="font-bold mb-3 text-white">
+      KONTAK KAMI
+     </h4>
+     <address class="not-italic space-y-1 text-gray-400 text-xs">
+      <p>
+       Jalan Padjadjaran (Ringroad Utara) Condongcatur Depok Sleman
+            Yogyakarta City, Indonesia Special Region of Yogyakarta
+      </p>
+      <p>
+       <span class="font-semibold">
+        Telp :
+       </span>
+       (0274) 864144
+      </p>
+      <p>
+       <span class="font-semibold">
+        Email :
+       </span>
+       bidhumascdiy@polri.go.id
+      </p>
+     </address>
+    </div>
+    <!-- Social Media -->
+    <div>
+     <h4 class="font-bold mb-3 text-white">
+      Social Media
+     </h4>
+     <p class="mb-3 text-gray-400 text-xs">
+      Temukan kami di Social Media dan jangan lupa follow/subscribe
+     </p>
+     <div class="flex space-x-3 text-gray-400">
+      <a aria-label="Facebook" class="hover:text-white" href="#">
+       <i class="fab fa-facebook-f">
+       </i>
+      </a>
+      <a aria-label="Instagram" class="hover:text-white" href="#">
+       <i class="fab fa-instagram">
+       </i>
+      </a>
+      <a aria-label="Twitter" class="hover:text-white" href="#">
+       <i class="fab fa-twitter">
+       </i>
+      </a>
+      <a aria-label="YouTube" class="hover:text-white" href="#">
+       <i class="fab fa-youtube">
+       </i>
+      </a>
+      <a aria-label="TikTok" class="hover:text-white" href="#">
+       <i class="fab fa-tiktok">
+       </i>
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="border-t border-gray-700 text-center py-3 text-gray-400 text-xs">
+    © Copyright 2023 Kepolisian Daerah Istimewa Yogyakarta
+   </div>
+  </footer>
+  <!-- WhatsApp floating button bottom right -->
+  <a aria-label="WhatsApp Contact" class="fixed bottom-4 right-4 bg-red-700 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:brightness-110 transition" href="#">
+   <i class="fab fa-whatsapp fa-lg">
+   </i>
+  </a>
+ </body>
+</html>
