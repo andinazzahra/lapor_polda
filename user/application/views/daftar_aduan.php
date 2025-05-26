@@ -31,10 +31,10 @@
      </div>
     </div>
     <nav class="text-sm font-normal text-black space-x-6">
-     <a class="hover:underline" href="#">
+     <a href="<?php echo base_url('homepage'); ?>" class="hover:underline" href="#">
       Home
      </a>
-     <a class="hover:underline" href="#">
+     <a href="<?php echo base_url('daftar_aduan'); ?>" class="hover:underline" href="#">
       Daftar Aduan
      </a>
     </nav>
