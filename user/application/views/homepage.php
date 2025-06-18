@@ -22,7 +22,7 @@
   <img class="w-full object-cover brightness-75" src="<?php echo base_url('../assets/polda.png') ?>" alt="POLDA DIY" />
   <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4" style="text-shadow: 0 0 5px rgba(0,0,0,0.7)">
     <h1 class="text-6xl font-bold text-white">
-      LAPOR POLDA DIY
+      LAPOR POLDA DIY gg
     </h1>
     <p class="mt-2 text-base sm:text-lg md:text-xl font-normal max-w-3xl">
       E-lapor Kepolisian Daerah Istimewa Yogyakartaaaaa
