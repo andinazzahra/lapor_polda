@@ -103,7 +103,7 @@
 
       <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY_HERE"></div>
 
-      <button type="submit">Login</button>
+      <button href="<?php echo base_url('dashboard'); ?>" type="submit">Login</button>
     </form>
   </div>
 </div>
