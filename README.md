@@ -1,1 +1,0 @@
-# lapor_polda
