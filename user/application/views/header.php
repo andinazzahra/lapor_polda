@@ -27,7 +27,7 @@
 	<div class="flex items-center space-x-2">
 	<img src="<?php echo base_url('../assets/logo.png') ?>" alt="Logi Kepolisian" class="w-10 h-12" height="32"/>
 	<div class="text-sm leading-tight">
-	<p class="text-1xl font-semibold text-black">Kepolisian hh</p>
+	<p class="text-1xl font-semibold text-black">Kepolisian</p>
 	<p class="text-1xl text-gray-700"> Daerah Istimewa Yogyakarta</p>
 	</div>
 	</div> 
