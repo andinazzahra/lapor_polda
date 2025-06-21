@@ -1,19 +1,25 @@
 <?php
 class Buat_aduan extends CI_Controller {
-	function index() {
 
+    public function __construct() {
+        parent::__construct();
+        $this->load->model('Aduan_model');
+    }
+
+    function index() {
         $inputan = $this->input->post();
-        if($inputan)
-        {
-            echo "<pre>";
-            print_r($inputan);
-            echo "</pre>";
-            //disini tinggal panggil model
-            //lalu jalankan function simpan_aduan($inputan) melalui model agar masuk ke database
+
+        if ($inputan) {
+            $this->Aduan_model->simpan_aduan($inputan);
+            redirect('buat_aduan/sukses');
         }
-		
-		$this->load->view("header");
-		$this->load->view("buat_aduan");
-		$this->load->view("footer");
-	}
+
+        $this->load->view("header");
+        $this->load->view("buat_aduan");
+        $this->load->view("footer");
+    }
+
+    public function sukses() {
+        echo "<h3>Aduan berhasil dikirim!</h3>";
+    }
 }
