@@ -1,6 +1,6 @@
 <header>
   <div class="logo">
-    <img src="C:\xampp\htdocs\laporpolda\assets\logo.png" alt="Logo Polda DIY">
+    <img src="<?php echo base_url("assets/logo.png") ?>" alt="Logo Polda DIY">
     <strong>Portal Admin | E-Lapor Polda DIY</strong>
   </div>
   <nav>
