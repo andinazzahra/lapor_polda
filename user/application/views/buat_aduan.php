@@ -23,27 +23,20 @@
    body {
       font-family: 'Inter', sans-serif;
     }
+
+    input, textarea, select {
+    color: black !important;
+    }
   </style>
+  
  </head>
  <body class="bg-white text-black">
-
-  <!-- Hero Section -->
-  <section class="relative w-full">
-  <img class="w-full object-cover brightness-75" src="<?php echo base_url('../assets/polda.png') ?>" alt="POLDA DIY" />
-  <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4" style="text-shadow: 0 0 5px rgba(0,0,0,0.7)">
-    <h1 class="text-6xl font-bold text-white">
-      LAPOR POLDA DIY
-    </h1>
-    <p class="mt-2 text-base sm:text-lg md:text-xl font-normal max-w-3xl">
-      E-lapor Kepolisian Daerah Istimewa Yogyakarta
-    </p>
-  </div>
-</section>
+ 
   <!-- Form Section -->
   <!-- Container luar -->
 <div class="min-h-screen flex items-center justify-center px-4 py-10">
   <!-- Kotak Form -->
-  <div class="p-8 rounded-lg shadow-lg w-full max-w-screen-lg" style="background-color: #D9D9D9;">
+  <div class="p-8 rounded shadow-lg w-full max-w-screen-lg bg-[#BD0808] text-white">
     <h2 class="text-center text-2xl font-bold mb-6">BUAT LAPORAN PENGADUAN</h2>
 
     <form method="post" enctype="multipart/form-data">
@@ -55,6 +48,16 @@
 
           <label class="block mb-2 font-semibold">Deskripsi Kejadian</label>
           <textarea name="deskripsi" rows="4" class="w-full border border-black rounded-sm px-2 py-1 mb-4 text-sm" required></textarea>
+
+          <label class="block mb-2 font-semibold">Tanggal Kejadian</label>
+          <div class="relative mb-4">
+            <input type="date" name="tanggal_kejadian" required
+                  class="w-full border border-black rounded-sm px-2 py-2 pr-10 text-sm appearance-none" />
+            <div class="absolute right-3 top-2.5 text-gray-500 pointer-events-none">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+          </div>
+
 
           <label class="block mb-2 font-semibold">Kategori Aduan</label>
           <select name="kategori" class="w-full border border-black rounded-sm px-2 py-1 mb-4 text-sm" required>
@@ -76,7 +79,7 @@
           <label for="lokasi" class="block mb-2 font-semibold">Lokasi Terkait</label>
           <input type="text" id="searchBox" class="w-full p-2 border rounded mb-2" placeholder="Cari lokasi atau alamat...">
 
-          <p class="text-xs text-gray-600 mb-2">Jika titik lokasi tidak sesuai, silakan geser icon map atau cari lokasi/alamat anda</p>
+          <p class="text-xs white mb-2">Jika titik lokasi tidak sesuai, silakan geser icon map atau cari lokasi/alamat anda</p>
 
           <input hidden type="text" name="lat" id="lat">
           <input hidden type="text" name="lng" id="lng">
@@ -86,12 +89,11 @@
             <p class="text-gray-500">Google Maps tidak dapat dimuat</p>
           </div>
 
-          <button type="button" onclick="openModal()" class="w-full text-white py-2 font-semibold rounded flex items-center justify-center gap-2" style="background-color: #BD0808;">
-
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15.172 7l-6.586 6.586a2 2 0 002.828 2.828l6.586-6.586a4 4 0 00-5.656-5.656L6.343 12.343a6 6 0 108.485 8.485"></path>
-            
-            LAMPIRAN
+          <button type="button" onclick="openModal()" class="w-full bg-white text-[#BD0808] py-2 font-semibold rounded flex items-center justify-center gap-2 hover:bg-gray-100 transition">
+              <i class="fas fa-paperclip"></i> <!-- Icon pengganti path jika perlu -->
+              LAMPIRAN
           </button>
+
           <!-- Modal Lampiran -->
           <div id="lampiranModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center">
             <div class="bg-white rounded-lg w-full max-w-md p-6 relative">
@@ -124,16 +126,17 @@
           <label class="block mb-2 font-semibold">No WhatsApp</label>
           <input type="tel" name="whatsapp" class="w-full border border-black rounded-sm px-2 py-1 mb-4 text-sm">
 
-          <button type="button" class="text-white py-2 px-4 rounded mb-4" style="background-color: #BD0808;">VERIFY</button>
+          <button type="button" class="bg-white text-[#BD0808] px-4 py-1 text-sm font-semibold rounded-sm shadow-sm hover:bg-gray-100 mb-2">VERIFY</button>
 
           <label class="block mb-2 font-semibold">Kode Verifikasi</label>
           <input type="text" name="kode_verifikasi" class="w-full border border-black rounded-sm px-2 py-1 mb-2 text-sm" placeholder="Masukkan kode 6 digit">
 
-          <p class="text-xs text-gray-600 mb-4">Kode verifikasi akan dikirim ke WhatsApp Anda setelah klik tombol "Verify".</p>
+          <p class="text-xs text-white mb-4">Kode verifikasi akan dikirim ke WhatsApp Anda setelah klik tombol "Verify".</p>
 
           <!-- reCAPTCHA -->
           
-          <button type="submit" class="w-full  text-white py-2 font-semibold rounded" style="background-color: #BD0808;">ADUKAN</button>
+          <button type="submit" class="w-full bg-white text-[#BD0808] py-2 font-semibold rounded hover:bg-gray-100 transition">ADUKAN</button>
+
         </div>
       </div>
     </form>
